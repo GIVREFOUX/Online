@@ -1,240 +1,250 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: #1E1E1E;
-            font-family: Arial, sans-serif;
-            color: #FFFFFF;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <style>
+    body {
+      background-color: #1E1E1E;
+      font-family: 'Courier New', monospace;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
 
-        .cv-section {
-            margin: 20px;
-            padding: 20px;
-            border: 2px solid #2E2E2E;
-            word-wrap: break-word;
-            border-radius: 5px;
-            background-color: #333;
-            margin-bottom: 20px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    .cv-section {
+      margin: 20px;
+      border: 1px solid #2E2E2E;
+      padding: 20px;
+      word-wrap: break-word;
+    }
 
-        .cv-section:hover {
-            background-color: #2E2E2E;
-            transform: scale(1.02);
-        }
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #569CD6;
+    }
 
-        .name {
-            font-size: 24px;
-            font-weight: bold;
-            color: #569CD6;
-        }
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #CE9178;
+    }
 
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #CE9178;
-            margin-top: 10px;
-        }
+    .section-content {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #FFFFFF;
+    }
 
-        .section-content {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #FFFFFF;
-            text-align: left;
-        }
+    .typing-effect {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2s steps(40, end) forwards, blink-caret 0.5s step-end infinite;
+    }
 
-        .section-content p {
-            margin: 10px 0;
-        }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
 
-        .typing-effect {
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 2s steps(40, end) forwards, blink-caret 0.5s step-end infinite;
-        }
+    @keyframes blink-caret {
+      from, to { border-right: 2px solid transparent; }
+      50% { border-right: 2px solid #000; }
+    }
 
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes blink-caret {
-            from, to {
-                border-right: 2px solid transparent;
-            }
-
-            50% {
-                border-right: 2px solid #000;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .cv-section {
-                margin: 10px;
-                padding: 15px;
-            }
-
-            .section-content {
-                font-size: 12px;
-            }
-        }
-    </style>
+    .formatted-text {
+      white-space: normal;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="cv-section">
-        <div class="name typing-effect">ZINEBI Abdelmoughite</div>
-        <div class="section-content typing-effect">
-            <p>Computer Science | Hard/Software, Networking Specialist</p>
-            <p>Casablanca, Morocco</p>
-            <p>+212 611 114 639</p>
-            <p>abdelmoughitezinebi@gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/abdelmoughitezinebi/" style="color: #569CD6;">LinkedIn</a></p>
-        </div>
+  <div class="cv-section">
+    <div class="name typing-effect">ZINEBI Abdelmoughite</div>
+    <div class="section-content typing-effect">
+      Computer Science | Hard/Software, Networking Specialist<br>
+      Casablanca, Morocco<br>
+      +212 611 114 639<br>
+      abdelmoughitezinebi@gmail.com<br>
+      <a href="https://www.linkedin.com/in/abdelmoughitezinebi/" style="color: #569CD6;">LinkedIn</a>
     </div>
+  </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Summary</div>
-        <div class="section-content typing-effect">
-            <p>I bring a wealth of experience in the domain of Computer Science, specializing in hardware, software, and networking. 
-                My passion for technology and commitment to learning make me a quick learner, ensuring I adapt seamlessly to evolving industry dynamics. 
-                As an IT Specialist, I excel in efficiently resolving hardware and software issues, with a particular focus on network security and system administration.</p>
-        </div>
+  <div class="cv-section">
+    <div class="section-title typing-effect">Summary</div>
+    <div class="section-content typing-effect">
+      I bring a wealth of experience in the domain of Computer Science, specializing in hardware, software, and networking.<br>
+      My passion for technology and commitment to learning make me a quick learner, ensuring I adapt seamlessly to evolving industry dynamics.<br>
+      As an IT Specialist, I excel in efficiently resolving hardware and software issues, with a particular focus on network security and system administration.
     </div>
+  </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Work Experience</div>
-        <div class="section-content">
-            <div class="work-entry">
-                <div class="work-headline typing-effect">
-                    <b>Jul 2023 - Present | Dell Casablanca</b>
-                </div>
-                <div class="work-title">
-                    Role: <span style="color: #569CD6;">Senior Technician, Technical ProSupport</span>
-                </div>
-                <p class="typing-effect">Delivered exceptional technical support and specialized in swiftly resolving hardware and software issues across diverse operating systems. Proficiently handled incident tracking and prevention, ensuring system stability and reliability.</p>
-                <p class="typing-effect">Skills: Diagnose · Salesforce Lightning · Ticketing Systems · Technical Support · Computer Repair · Computer Hardware</p>
-            </div>
-
-            <div class="work-entry">
-                <div class="work-headline typing-effect">
-                    <b>Dec 2022 - Jul 2023 | IO Solutions Contact Center Casablanca</b>
-                </div>
-                <div class="work-title">
-                    Role: <span style="color: #569CD6;">IT & Helpdesk</span>
-                </div>
-                <p class="typing-effect">Expertly managed Active-Directory User Interface, internal equipment installations, and troubleshooting of internal applications. Devoted to optimizing employee workflows and guaranteeing seamless operations.</p>
-                <p class="typing-effect">Skills: Diagnose · Cisco Networking · Cloud Computing · Computer Hardware · Computer Science · Fortinet · Windows Server · Active Directory · Network Security · Security Policy · Microsoft Office · Open Innovation · Communication · Microsoft Azure</p>
-            </div>
-
-            <div class="work-entry">
-                <div class="work-headline typing-effect">
-                    <b>Mar 2021 - Aug 2022 | Majorel Casablanca</b>
-                </div>
-                <div class="work-title">
-                    Role: <span style="color: #569CD6;">Senior QM-CM</span>
-                </div>
-                <p class="typing-effect">Ensured platform excellence and user safety through quality management and content moderation expertise. Demonstrated proficiency in enhancing content quality and contributing to a positive user experience.</p>
-                <p class="typing-effect">Skills: Diagnose · Security Policy · Microsoft Office · Open Innovation · Communication</p>
-            </div>
+  <div class="cv-section">
+    <div class="section-title typing-effect">Work Experience</div>
+    <div class="section-content">
+      <div class="work-entry">
+        <div class="work-headline typing-effect">
+          <b>Jul 2023 - Present | Dell Casablanca</b>
         </div>
-    </div>
-
-    <div class="cv-section">
-        <div class="section-title typing-effect">Education</div>
-        <div class="section-content">
-            <b>Sep 2020 - Jun 2023 | Computer Engineering, Hubei Engineering University (Masters)</b>
-            <p class="typing-effect">Research investigating prospective advancements in five critical domains: Artificial Intelligence (AI) and Machine Learning, Edge Computing and Internet of Things (IoT), Cyber-Physical Systems (CPS), Quantum Computing and Cryptography, and Hardware-Software Co-Design. The objective is to foresee upcoming patterns and obstacles in this swiftly evolving technological terrain.</p>
-            <b>Sep 2019 - Jun 2020 | Computer Systems Networking and Telecommunications, Hubei University Of Economics (Bachelor)</b>
-            <p class="typing-effect">Research proposal aiming to anticipate future trends and advancements in this dynamic field. With technologies like 5G and IoT on the rise, this study seeks to analyze their potential impact, envisioning the transformative direction of networks and telecommunications.</p>
+        <div class="work-title">
+          Role: <span style="color: #569CD6;">Senior Technician, Technical ProSupport</span>
         </div>
-    </div>
-
-    <div class="cv-section">
-        <div class="section-title typing-effect">Skills</div>
-        <div class="section-content">
-            <p class="typing-effect">Active Directory Beginner Network/Server Administration Beginner</p>
-            <p class="typing-effect">Computer Hardware Architect Beginner Microsoft Azure Beginner</p>
-            <p class="typing-effect">Microsoft Office Experienced Operating Systems Experienced</p>
-            <p class="typing-effect">Research Skills Experienced Salesforce Experienced</p>
-            <p class="typing-effect">Team Management Experienced Technical Skills Experienced</p>
-            <p class="typing-effect">Technical Support Experienced Telecommunications Experienced</p>
-            <p class="typing-effect">Troubleshooting Experienced</p>
+        <div class="formatted-text typing-effect">
+          Delivered exceptional technical support and specialized in swiftly resolving hardware and software issues across diverse operating systems.<br>
+          Proficiently handled incident tracking and prevention, ensuring system stability and reliability.<br>
+          Skills: Diagnose · Salesforce Lightning · Ticketing Systems · Technical Support · Computer Repair · Computer Hardware
         </div>
-    </div>
+      </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Languages</div>
-        <div class="section-content">
-            <p class="typing-effect">Arabic (Native Speaker)</p>
-            <p class="typing-effect">English (Very Good)</p>
-            <p class="typing-effect">French (Very Good)</p>
-            <p class="typing-effect">Chinese (Simplified) (Basic)</p>
+      <div class="work-entry">
+        <div class="work-headline typing-effect">
+          <b>Dec 2022 - Jul 2023 | IO Solutions Contact Center Casablanca</b>
         </div>
-    </div>
+        <div class="work-title">
+          Role: <span style="color: #569CD6;">IT & Helpdesk</span>
+        </div>
+        <div class="formatted-text typing-effect">
+          Expertly managed Active-Directory User Interface, internal equipment installations, and troubleshooting of internal applications.<br>
+          Devoted to optimizing employee workflows and guaranteeing seamless operations.<br>
+          Skills: Diagnose · Cisco Networking · Cloud Computing · Computer Hardware · Computer Science · Fortinet · Windows Server · Active Directory · Network Security · Security Policy · Microsoft Office · Open Innovation · Communication · Microsoft Azure
+        </div>
+      </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Links</div>
-        <div class="section-content">
-            <a href="https://www.linkedin.com/in/abdelmoughitezinebi/" style="color: #569CD6;" class="typing-effect">LinkedIn</a>
+      <div class="work-entry">
+        <div class="work-headline typing-effect">
+          <b>Mar 2021 - Aug 2022 | Majorel Casablanca</b>
         </div>
+        <div class="work-title">
+          Role: <span style="color: #569CD6;">Senior QM-CM</span>
+        </div>
+        <div class="formatted-text typing-effect">
+          Ensured platform excellence and user safety through quality management and content moderation expertise.<br>
+          Demonstrated proficiency in enhancing content quality and contributing to a positive user experience.<br>
+          Skills: Diagnose · Security Policy · Microsoft Office · Open Innovation · Communication
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Courses</div>
-        <div class="section-content">
-            <p class="typing-effect">Technical Support Fundamentals, Google</p>
-            <p class="typing-effect">The Bits and Bytes of Computer Networking, Google</p>
-            <p class="typing-effect">Microsoft Azure Management Tools and Security Solutions, Microsoft</p>
-            <p class="typing-effect">Introduction to Technical Support, IBM</p>
-            <p class="typing-effect">Version Control, Meta</p>
-            <p class="typing-effect">React Basics, Meta</p>
-            <p class="typing-effect">Programming with JavaScript, Meta</p>
-            <p class="typing-effect">Introduction to Front-End Development, Meta</p>
-            <p class="typing-effect">HTML and CSS in depth, Meta</p>
-            <p class="typing-effect">Advanced React, Meta</p>
-            <p class="typing-effect">Inspiring and Motivating Individuals, University of Michigan</p>
-            <p class="typing-effect">Leading Teams, University of Michigan</p>
+  <div class="cv-section">
+    <div class="section-title typing-effect">Education</div>
+    <div class="section-content typing-effect">
+      <div class="education-entry">
+        <div class="education-headline typing-effect">
+          <b>Sep 2020 - Jun 2023 | Computer Engineering, Hubei Engineering University (Masters)</b>
         </div>
-    </div>
+        <div class="formatted-text typing-effect">
+          Research investigating prospective advancements in five critical domains: Artificial Intelligence (AI) and Machine Learning, Edge Computing and Internet of Things (IoT), Cyber-Physical Systems (CPS), Quantum Computing and Cryptography, and Hardware-Software Co-Design. The objective is to foresee upcoming patterns and obstacles in this swiftly evolving technological terrain.
+        </div>
+      </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Volunteering</div>
-        <div class="section-content">
-            <p class="typing-effect">Front Speaker | Organizer | Instant Translator | Consultant, Moroccan Spacenauts</p>
-            <p class="typing-effect">Actively participated in numerous astronomy and astro-robotics events, catering to a diverse audience and promoting the marvels of space exploration and technology.</p>
-            <p class="typing-effect">This included coordination of major events such as:</p>
-            <p class="typing-effect">Visit of NASA's Engineer NAGIN COX and Mars Mission Staff</p>
-            <p class="typing-effect">Organization of NASA SpaceCam Morocco</p>
-            <p class="typing-effect">Visit of NASA's Quantum Physics Engineer Kamal Oudrhiri</p>
-            <p class="typing-effect">SpaceFest, SpaceBot, SpaceVan, and other notable events</p>
-            <p class="typing-effect">My engagement with the Moroccan Pacenauts Association significantly enhanced my public speaking, event organization, and interpersonal skills. These experiences further ignited my passion for astronomy and astro-robotics, driving me to continuously contribute to this fascinating field.</p>
+      <div class="education-entry">
+        <div class="education-headline typing-effect">
+          <b>Sep 2019 - Jun 2020 | Computer Systems Networking and Telecommunications, Hubei University Of Economics (Bachelor)</b>
         </div>
+        <div class="formatted-text typing-effect">
+          Research proposal aiming to anticipate future trends and advancements in this dynamic field. With technologies like 5G and IoT on the rise, this study seeks to analyze their potential impact, envisioning the transformative direction of networks and telecommunications.
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="cv-section">
-        <div class="section-title typing-effect">Hobbies</div>
-        <div class="section-content typing-effect">
-            <p>Astronomy/Astrophysics</p>
-            <p>Robotics (AI, Automation, SaaS Software Automation)</p>
-            <p>Writing</p>
-            <p>Politics</p>
-            <p>Discovery</p>
-            <p>Online Courses & Webinars</p>
-            <p>Freelance (Consulting: Directive IT, Cloud Infrastructure, IT Team Building and Task Vision)</p>
-        </div>
+  <div class="cv-section">
+    <div class="section-title typing-effect">Skills</div>
+    <div class="section-content typing-effect">
+      Active Directory Beginner Network/Server Administration Beginner<br>
+      Computer Hardware Architect Beginner Microsoft azure Beginner<br>
+      Microsoft office Experienced Operating Systems Experienced<br>
+      Research skills Experienced Salesforce Experienced<br>
+      Team management Experienced Technical skills Experienced<br>
+      Technical Support Experienced Telecommunications Experienced<br>
+      Troubleshooting Experienced
     </div>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title typing-effect">Languages</div>
+    <div class="section-content typing-effect">
+      Arabic Native Speaker<br>
+      English Very Good<br>
+      French Very Good<br>
+      Chinese (Simplified) Basic
+    </div>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title typing-effect">Courses</div>
+    <div class="section-content">
+      <div class="course-entry">
+        <div class="course-headline typing-effect">
+          Technical Support Fundamentals, Google
+        </div>
+        <div class="course-title typing-effect">
+          The Bits and Bytes of Computer Networking, Google
+        </div>
+        <div class="course-title typing-effect">
+          Microsoft Azure Management Tools and Security Solutions, Microsoft
+        </div>
+        <div class="course-title typing-effect">
+          Introduction to Technical Support, IBM
+        </div>
+        <div class="course-title typing-effect">
+          Version Control, Meta
+        </div>
+        <div class="course-title typing-effect">
+          React Basics, Meta
+        </div>
+        <div class="course-title typing-effect">
+          Programming with JavaScript, Meta
+        </div>
+        <div class="course-title typing-effect">
+          Introduction to Front-End Development, Meta
+        </div>
+        <div class="course-title typing-effect">
+          HTML and CSS in depth, Meta
+        </div>
+        <div class="course-title typing-effect">
+          Advanced React, Meta
+        </div>
+        <div class="course-title typing-effect">
+          Inspiring and Motivating Individuals, University of Michigan
+        </div>
+        <div class="course-title typing-effect">
+          Leading Teams, University of Michigan
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title typing-effect">Volunteering</div>
+    <div class="section-content">
+      <div class="volunteer-entry">
+        <div class="volunteer-headline typing-effect">
+          Front Speaker | Organizer | Instant translator | Consultant, Moroccan Spacenauts
+        </div>
+        <div class="formatted-text typing-effect">
+          Actively participated in numerous astronomy and astro-robotics events, catering to a diverse audience and promoting the marvels of space exploration and technology.<br>
+          This included coordination of major events such as:<br>
+          Visit of NASA's Engineer NAGIN COX and Mars Mission Staff<br>
+          Organization of NASA SpaceCam Morocco<br>
+          Visit of NASA's Quantum Physics Engineer Kamal Oudrhiri<br>
+          SpaceFest, SpaceBot, SpaceVan, and other notable events<br>
+          My engagement with the Moroccan Pacenauts Association significantly enhanced my public speaking, event organization, and interpersonal skills. These experiences further ignited my passion for astronomy and astro-robotics, driving me to continuously contribute to this fascinating field.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title typing-effect">Hobbies</div>
+    <div class="section-content typing-effect">
+      Astronomy/Astrophysics<br>
+      Robotics (AI, Automation, SaaS Software Automation)<br>
+      Writing<br>
+      Politics<br>
+      Discovery<br>
+      Online Courses & Webinars<br>
+      Freelance (Consulting: Directive IT, Cloud Infrastructure, IT Team Building and Task Vision)
+    </div>
+  </div>
 </body>
-
 </html>
